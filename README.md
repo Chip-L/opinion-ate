@@ -1,6 +1,7 @@
 # Opinion Ate
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b0252632-26f2-490a-ae0c-2fbffac3d323/deploy-status)](https://app.netlify.com/sites/chips-opinion-ate/deploys)
+[![opinion-ate](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/1hj2om&style=flat&logo=cypress)](https://cloud.cypress.io/projects/1hj2om/runs)
 
 ## Description
 
