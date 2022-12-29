@@ -1,13 +1,24 @@
 import { useEffect } from 'react';
+import { IRestaurant } from '../../types/Restaurant';
 
 interface RestaurantListProps {
-  loadRestaurants?: () => void;
+  loadRestaurants: () => void;
+  restaurants: IRestaurant[];
 }
 
-export function RestaurantList({ loadRestaurants }: RestaurantListProps) {
+export function RestaurantList({
+  loadRestaurants,
+  restaurants,
+}: RestaurantListProps) {
   useEffect(() => {
     loadRestaurants();
   }, [loadRestaurants]);
 
-  return <div>RestaurantList</div>;
+  return (
+    <ul>
+      {restaurants.map((restaurant) => (
+        <li key={restaurant.id}>{restaurant.name}</li>
+      ))}
+    </ul>
+  );
 }
