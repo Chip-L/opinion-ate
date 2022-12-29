@@ -4,7 +4,7 @@ import { IRestaurant } from '../../types/Restaurant';
 import { loadRestaurants } from '../../store/restaurants/actions';
 
 interface RestaurantListProps {
-  loadRestaurants: () => Promise<void>;
+  loadRestaurants: () => void;
   restaurants: IRestaurant[];
 }
 
